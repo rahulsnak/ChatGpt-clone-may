@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .infoText {
+        @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px]
+    }
+
+    .chatRow{
+        @apply rounded-lg px-5 py-3 text-sm flex items-center
+        justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer
+        text-gray-300 transition-all duration-200 ease-out
+    }
+}
+
+.speech-to-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column; 
+}
+
+.micStart:hover {
+    background-color: #e3bfbc;
+  }
+
+.button-style {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #9db0b8;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+.voice-search {
+      top: 10px;
+      right: 10px;
+      background: white;
+      position: fixed;
+  }    
+
+.voice-modal {
+  position: 'absolute' as 'absolute';
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: 400;
+  border: '2px solid #000';
+}
+
+.modal-content {
+  width: 48%;
+  border-radius: 5px;
+
+}
+.modal-hdg{
+  font-size: 20px;
+  line-height: 28px; 
+  font-weight: 700;
+  color:#183d31;
+  margin-bottom: 30px;
+}
+
+.modal-content form  {
+  border: solid 1px #cccc;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.divider{
+  margin: 20px  0px;
+  text-align: center;
+  position: relative;
+}
+
+.divider::after {
+  content: "";
+  display: block;
+  width: 48%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 13px;
+}
+.divider::before {
+  content: "";
+  display: block;
+  width: 46%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+.recording button{
+  background:#68de7a;
+  padding: 20px;
+  display: block;
+  width: 100%;
+}
